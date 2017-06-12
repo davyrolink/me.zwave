@@ -3,7 +3,7 @@
     "name": {
         "en": "Z-Wave.Me"
     },
-    "version": "0.1.1",
+    "version": "0.1.3",
     "compatibility": ">=1.1.0",
     "description": {
         "en": "Z-Wave.Me devices for Homey",
@@ -23,38 +23,19 @@
     },
     "contributors": {
         "developers": [
-            {
+			{
+				"name": "Patrick van der Westen",
+				"email": "pvdwesten@hotmail.com"
+			},
+			{
                 "name": "Martijn Suijlen",
                 "email": "msuylen+homey@gmail.com"
-            },
-            {
-				"name": "Icarus",
-				"email": "msuylen@gmail.com"
-            },
-            {
-                "name": "Bart Kockx",
-                "email": "bkockx@gmail.com"
-            },
-            {
-                "name": "Robin van Kekem",
-                "email": "nl.inversion@gmail.com"
-            },
-            {
-                "name": "Marco Frijmann",
-                "email": "marco@frijmann.nl"
-            },
-            {
-                "name": "Jelger Haanstra",
-                "email": "homey@solidewebservices.com"
-            },
-            {
-                "name": "Marco van 't Klooster",
-                "email": "info@marcovantklooster.nl"
             }
         ]
     },
 	"flow": {
-		"triggers": [{
+		"triggers": [
+		{
 			"id": "ZME_KFOB_btn1_single",
 			"title": {
 				"en": "Button 1 single press",
@@ -65,7 +46,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn1_double",
 			"title": {
 				"en": "Button 1 double press",
@@ -76,7 +58,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn2_single",
 			"title": {
 				"en": "Button 2 single press",
@@ -87,7 +70,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn2_double",
 			"title": {
 				"en": "Button 2 double press",
@@ -98,7 +82,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn3_single",
 			"title": {
 				"en": "Button 3 single press",
@@ -109,7 +94,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn3_double",
 			"title": {
 				"en": "Button 3 double press",
@@ -120,7 +106,8 @@
 				"type": "device",
 				"filter": "driver_id=WZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn4_single",
 			"title": {
 				"en": "Button 4 single press",
@@ -131,7 +118,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_btn4_double",
 			"title": {
 				"en": "Button 4 double press",
@@ -142,7 +130,8 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
 			"id": "ZME_KFOB_battery_alarm",
 			"title": {
 				"en": "The battery alarm turned on",
@@ -153,7 +142,116 @@
 				"type": "device",
 				"filter": "driver_id=ZME_KFOB"
 			}]
-		}, {
+		}, 
+		{
+			"id": "ZME_WCD2_btn1_single",
+			"title": {
+				"en": "Button 1 single press",
+				"nl": "Een maal gedrukt op knop 1"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn1_double",
+			"title": {
+				"en": "Button 1 double press",
+				"nl": "Twee maal gedrukt op knop 1"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn2_single",
+			"title": {
+				"en": "Button 2 single press",
+				"nl": "Een maal gedrukt op knop 2"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn2_double",
+			"title": {
+				"en": "Button 2 double press",
+				"nl": "Twee maal gedrukt op knop 2"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn3_single",
+			"title": {
+				"en": "Button 3 single press",
+				"nl": "Een maal gedrukt op knop 3"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn3_double",
+			"title": {
+				"en": "Button 3 double press",
+				"nl": "Twee maal gedrukt op knop 3"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn4_single",
+			"title": {
+				"en": "Button 4 single press",
+				"nl": "Een maal gedrukt op knop 4"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_btn4_double",
+			"title": {
+				"en": "Button 4 double press",
+				"nl": "Twee maal gedrukt op knop 4"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
+			"id": "ZME_WCD2_battery_alarm",
+			"title": {
+				"en": "The battery alarm turned on",
+				"nl": "De batterijwaarschuwing gaat aan"
+			},
+			"args": [{
+				"name": "device",
+				"type": "device",
+				"filter": "driver_id=ZME_WCD2"
+			}]
+		}, 
+		{
 			"id": "WALLC-S_btn1_single",
 			"title": {
 				"en": "Button 1 single press",
@@ -164,7 +262,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn1_double",
 			"title": {
 				"en": "Button 1 double press",
@@ -175,7 +274,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn2_single",
 			"title": {
 				"en": "Button 2 single press",
@@ -186,7 +286,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn2_double",
 			"title": {
 				"en": "Button 2 double press",
@@ -197,7 +298,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn3_single",
 			"title": {
 				"en": "Button 3 single press",
@@ -208,7 +310,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn3_double",
 			"title": {
 				"en": "Button 3 double press",
@@ -219,7 +322,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn4_single",
 			"title": {
 				"en": "Button 4 single press",
@@ -230,7 +334,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_btn4_double",
 			"title": {
 				"en": "Button 4 double press",
@@ -241,7 +346,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_battery_alarm",
 			"title": {
 				"en": "The battery alarm turned on",
@@ -252,7 +358,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn1_single",
 			"title": {
 				"en": "Button 1 single press",
@@ -263,7 +370,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn1_double",
 			"title": {
 				"en": "Button 1 double press",
@@ -274,7 +382,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn2_single",
 			"title": {
 				"en": "Button 2 single press",
@@ -285,7 +394,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn2_double",
 			"title": {
 				"en": "Button 2 double press",
@@ -296,7 +406,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn3_single",
 			"title": {
 				"en": "Button 3 single press",
@@ -307,7 +418,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn3_double",
 			"title": {
 				"en": "Button 3 double press",
@@ -318,7 +430,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn4_single",
 			"title": {
 				"en": "Button 4 single press",
@@ -329,7 +442,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_btn4_double",
 			"title": {
 				"en": "Button 4 double press",
@@ -340,7 +454,8 @@
 				"type": "device",
 				"filter": "driver_id=WALLC-S_V2"
 			}]
-		}, {
+		}, 
+		{
 			"id": "WALLC-S_V2_battery_alarm",
 			"title": {
 				"en": "The battery alarm turned on",
@@ -728,7 +843,359 @@
 			}]
 		}]
 	},
-		{
+	{
+		"id": "ZME_WCD2",
+		"name": {
+			"en": "ZME_WCD2 - Scene Switch",
+			"nl": "ZME_WCD2 - Scene Schakelaar"
+		},
+		"zwave": {
+			"manufacturerId": 277,
+			"productTypeId": 256,
+			"productId": 4,
+			"wakeUpInterval": 1800,
+			"learnmode": {
+				"image": "/drivers/ZME_WCD2/assets/learnmode.svg",
+				"instruction": {
+					"en": "Press any one of the four buttons for one second",
+					"nl": "Druk minimaal 1 seconde op een van de knoppen."
+				}
+			},
+			"associationGroups": [
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		},
+		"class": "zwavecontroller",
+		"capabilities": [
+			"measure_battery"
+		],
+		"images": {
+			"large": "/drivers/ZME_WCD2/assets/images/large.png",
+			"small": "/drivers/ZME_WCD2/assets/images/small.png"
+		},
+		"settings": [{
+			"id": "button_1_and_3_pair_mode",
+			"type": "dropdown",
+			"label": {
+				"en": "Button 1 and 3 pair mode"
+			},
+			"value": "1",
+			"hint": {
+				"en": "The parameter determines the behaviour of buttons 1 and 3."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Seperately, button 1 works with group A, button 3 with group C. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. "
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Pair without double clicks, button A/C are Up/Down . Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B and D"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(2) Pair with double clicks. button A/C are Up/Down . Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B,double click with group D"
+				}
+			}]
+		}, {
+			"id": "button_2_and_4_pair_mode",
+			"type": "dropdown",
+			"label": {
+				"en": "Button 2 and 4 pair mode"
+			},
+			"value": "1",
+			"hint": {
+				"en": "The parameter determines the behaviour of buttons 2 and 4."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Seperately, button 2 works with control group B, button 4 with control group D. Click is On, Hold is dimming Up, Double click is Off, Click-Hold is dimming Down. "
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Pair without double clicks, button B/D are Up/Down. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B and D"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(2) Pair with double clicks, button B/D are Up/Down. Click is On/Off, Hold is dimming Up/Down. Single clicks works with group B,double click with group D"
+				}
+			}]
+		}, {
+			"id": "command_to_control_group_a",
+			"type": "dropdown",
+			"label": {
+				"en": "Command to Control Group A"
+			},
+			"value": "8",
+			"hint": {
+				"en": "Defines the command to be sent to devices of control group A when the related button is pressed."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Disabled"
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(2) Switch On/Off only (send Basic Set)"
+				}
+			}, {
+				"id": "3",
+				"label": {
+					"en": "(3) Switch All"
+				}
+			}, {
+				"id": "4",
+				"label": {
+					"en": "(4) Send Scenes"
+				}
+			}, {
+				"id": "5",
+				"label": {
+					"en": "(5) Send Preconfigured Scenes"
+				}
+			}, {
+				"id": "7",
+				"label": {
+					"en": "(7) Control DoorLock"
+				}
+			}, {
+				"id": "8",
+				"label": {
+					"en": "(8) Central Scene to Gateway (Default)"
+				}
+			}]
+		}, {
+			"id": "command_to_control_group_b",
+			"type": "dropdown",
+			"label": {
+				"en": "Command to Control Group B"
+			},
+			"value": "8",
+			"hint": {
+				"en": "Defines the command to be sent to devices of control group B when the related button is pressed."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Disabled"
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(2) Switch On/Off only (send Basic Set)"
+				}
+			}, {
+				"id": "3",
+				"label": {
+					"en": "(3) Switch All"
+				}
+			}, {
+				"id": "4",
+				"label": {
+					"en": "(4) Send Scenes"
+				}
+			}, {
+				"id": "5",
+				"label": {
+					"en": "(5) Send Preconfigured Scenes"
+				}
+			}, {
+				"id": "7",
+				"label": {
+					"en": "(7) Control DoorLock"
+				}
+			}, {
+				"id": "8",
+				"label": {
+					"en": "(8) Central Scene to Gateway (Default)"
+				}
+			}]
+		}, {
+			"id": "command_to_control_group_c",
+			"type": "dropdown",
+			"label": {
+				"en": "Command to Control Group C"
+			},
+			"value": "8",
+			"hint": {
+				"en": "Defines the command to be sent to devices of control group C when the related button is pressed."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Disabled"
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(3) Switch On/Off only (send Basic Set)"
+				}
+			}, {
+				"id": "3",
+				"label": {
+					"en": "(3) Switch All"
+				}
+			}, {
+				"id": "4",
+				"label": {
+					"en": "(4) Send Scenes"
+				}
+			}, {
+				"id": "5",
+				"label": {
+					"en": "(5) Send Preconfigured Scenes"
+				}
+			}, {
+				"id": "7",
+				"label": {
+					"en": "(7) Control DoorLock"
+				}
+			}, {
+				"id": "8",
+				"label": {
+					"en": "(8) Central Scene to Gateway (Default)"
+				}
+			}]
+		}, {
+			"id": "command_to_control_group_d",
+			"type": "dropdown",
+			"label": {
+				"en": "Command to Control Group D"
+			},
+			"value": "8",
+			"hint": {
+				"en": "Defines the command to be sent to devices of control group D when the related button is pressed."
+			},
+			"values": [{
+				"id": "0",
+				"label": {
+					"en": "(0) Disabled"
+				}
+			}, {
+				"id": "1",
+				"label": {
+					"en": "(1) Switch On/Off and Dim (send Basic Set and Switch Multilevel)"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(3) Switch On/Off only (send Basic Set)"
+				}
+			}, {
+				"id": "3",
+				"label": {
+					"en": "(3) Switch All"
+				}
+			}, {
+				"id": "4",
+				"label": {
+					"en": "(4) Send Scenes"
+				}
+			}, {
+				"id": "5",
+				"label": {
+					"en": "(5) Send Preconfigured Scenes"
+				}
+			}, {
+				"id": "7",
+				"label": {
+					"en": "(7) Control DoorLock"
+				}
+			}, {
+				"id": "8",
+				"label": {
+					"en": "(8) Central Scene to Gateway (Default)"
+				}
+			}]
+		}, {
+			"id": "send_the_following_switch_sll_commands",
+			"type": "dropdown",
+			"label": {
+				"en": "Switch All commands"
+			},
+			"value": "1",
+			"hint": {
+				"en": "Send the following Switch All commands."
+			},
+			"values": [{
+				"id": "1",
+				"label": {
+					"en": "(1) Switch off only. (Default)"
+				}
+			}, {
+				"id": "2",
+				"label": {
+					"en": "(2) Switch on only."
+				}
+			}, {
+				"id": "255",
+				"label": {
+					"en": "(255) Switch all on and off"
+				}
+			}]
+		}, {
+			"id": "invert_buttons",
+			"type": "checkbox",
+			"label": {
+				"en": "Invert buttons"
+			},
+			"value": false,
+			"hint": {
+				"en": "Invert the behaviour of the buttons."
+			}
+
+		}, {
+				"id": "send_unsolicited_battery_report_on_wake_up",
+				"type": "dropdown",
+				"label": {
+					"en": "Send unsolicited Battery Report on Wake Up "
+				},
+				"value": "1",
+				"values": [{
+					"id": "0",
+					"label": {
+						"en": "(0) No."
+					}
+				}, {
+					"id": "1",
+					"label": {
+						"en": "(1) To same node as wake up notification. (Default)"
+					}
+				}, {
+					"id": "2",
+					"label": {
+						"en": "(2) Broadcast to neighbours."
+					}
+				}]
+			}]
+	},
+	{
 		"id": "WALLC-S",
 		"name": {
 			"en": "WALLC-S - Scene Switch",
@@ -1077,29 +1544,29 @@
 				}
 			}]
 		}, {
-			"id": "send_unsolicited_battery_report_on_wake_up",
-			"type": "dropdown",
-			"label": {
-				"en": "Send unsolicited Battery Report on Wake Up "
-			},
-			"value": "1",
-			"values": [{
-				"id": "0",
+				"id": "send_unsolicited_battery_report_on_wake_up",
+				"type": "dropdown",
 				"label": {
-					"en": "(0) No."
-				}
-			}, {
-				"id": "1",
-				"label": {
-					"en": "(1) To same node as wake up notification. (Default)"
-				}
-			}, {
-				"id": "2",
-				"label": {
-					"en": "(2) Broadcast to neighbours."
-				}
+					"en": "Send unsolicited Battery Report on Wake Up "
+				},
+				"value": "1",
+				"values": [{
+					"id": "0",
+					"label": {
+						"en": "(0) No."
+					}
+				}, {
+					"id": "1",
+					"label": {
+						"en": "(1) To same node as wake up notification. (Default)"
+					}
+				}, {
+					"id": "2",
+					"label": {
+						"en": "(2) Broadcast to neighbours."
+					}
+				}]
 			}]
-		}]
 	},
 		{
 		"id": "WALLC-S_V2",
