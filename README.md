@@ -38,7 +38,10 @@ If you like the work, please help me buy a stroller for my future kid :D
 
 
 #Changelog:
-* 0.1.3
+*0.2.0
+Combined flow calls for WALLC-S, WALLC-S_V2, ZME_KFOB and ZME_WCD2
+
+*0.1.3
 added ZME_WCD2
 
 *0.1.1

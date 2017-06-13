@@ -3,7 +3,6 @@
 const path = require("path");
 const ZwaveDriver = require("homey-zwavedriver");
 
-//http://www.pepper1.net/zwavedb/device/554
 //http://products.z-wavealliance.org/products/2110
 
 module.exports = new ZwaveDriver(path.basename(__dirname), {
@@ -28,7 +27,7 @@ module.exports = new ZwaveDriver(path.basename(__dirname), {
 				if (node && node.state && node.state.measure_battery !== 1 && report['Battery Level (Raw)'][0] == 0xFF) {
 
 					// Trigger device flow
-					Homey.manager('flow').triggerDevice('WALLC-S_battery_alarm', {}, {}, node.device_data, err => {
+					Homey.manager('flow').triggerDevice('Push_battery_alarm', {}, {}, node.device_data, err => {
 						if (err) console.error('Error triggerDevice -> battery_alarm', err);
 					});
 				}
@@ -123,7 +122,7 @@ module.exports.on('initNode', function( token ){
 
 				var triggerId = triggerMap[ report['Scene Number'] ];
 				if (triggerId) {
-					Homey.manager('flow').triggerDevice(`WALLC-S_btn${triggerId}`, null, null, node.device_data);
+					Homey.manager('flow').triggerDevice(`Push_btn${triggerId}`, null, null, node.device_data);
 				}
 			}
 		});
